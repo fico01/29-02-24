@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./react-router-dom.production.min.js"></script>
+    <script src="./popper.js"></script>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <script src="./bootstrap.bundle.min.js"></script>   
+    <script src="./react.development.js"></script>
+    <script src="./react-dom.development.js"></script>
+    <script src="./babel.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <div id="mydiv">
+
+    </div>
+    
+
+    <script type="text/babel">
+
+        const txtNome = React.createRef()
+        const txtSobrenome = React.createRef()
+        const txtDiaNascimento = React.createRef()
+        const txtMesNascimento= React.createRef()
+        const txtAnoNascimento = React.createRef()
+        const txtEmail = React.createRef()
+        const txtWhatsapp = React.createRef()
+        const txtEndereco = React.createRef()
+        const txtNumEndereco = React.createRef()
+        const txtBairro = React.createRef()
+        const txtCEP = React.createRef()
+        const txtCidade = React.createRef()
+        const txtEstado = React.createRef()
+        const txtCPF = React.createRef()
+        const txtRG = React.createRef()
+        const txtNacionalidade = React.createRef()
+        const txtProfissao = React.createRef()
+        const txtEstadoCivil = React.createRef()
+        const txtSenha = React.createRef()
+
+
+        const txt_CEP = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtCEP"}
+            ref={txtCEP} />
+        );
+
+        const txt_Nome = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtNome"}
+            ref={txtNome} />
+        );
+
+        const txt_Sobrenome = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtSobrenome"}
+            ref={txtSobrenome} />
+        );
+
+        const txt_DiaNascimento = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtDiaNascimento"}
+            ref={txtDiaNascimento} />
+        );
+
+        const txt_MesNascimento = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtMesNascimento"}
+            ref={txtMesNascimento} />
+        );
+
+        const txt_AnoNascimento = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtAnoNascimento"}
+            ref={txtAnoNascimento} />
+        );
+        const txt_Email = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtEmail"}
+            ref={txtEmail} />
+        );
+        const txt_Whatsapp = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtWhatsapp"}
+            ref={txtWhatsapp} />
+        );
+        const txt_Endereco = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtEndereco"}
+            ref={txtEndereco} />
+        );
+        const txt_NumEndereco = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtNumEndereco"}
+            ref={txtNumEndereco} />
+        );
+
+        const txt_Cidade = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtCidade"}
+            ref={txtCidade} />
+        );
+        const txt_Bairro = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtCidade"}
+            ref={txtCidade} />
+        );
+
+
+        const txt_Estado = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtEstado"}
+            ref={txtEstado} />
+        );
+
+        const txt_CPF = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtCPF"}
+            ref={txtCPF} />
+        );
+
+        const txt_RG = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtRG"}
+            ref={txtRG} />
+        );
+
+        const txt_Nacionalidade = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtNacionalidade"}
+            ref={txtNacionalidade} />
+        );
+
+        const txt_Profissao = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtProfissao"}
+            ref={txtProfissao} />
+        );
+        const txt_EstadoCivil = React.createRef(
+            <input
+            type={"text"} 
+            id={"txtEstadoCivil"}
+            ref={txtEstadoCivil} />
+        );
+        const txt_Senha = React.createRef(
+            <input
+            type={"password"} 
+            id={"txtSenha"}
+            ref={txtSenha} />
+        );
+
+        const lblNome = React.createRef()
+        const lblSobrenome = React.createRef()
+        const lblDiaNascimento = React.createRef()
+        const lblMesNascimento= React.createRef()
+        const lblAnoNascimento = React.createRef()
+        const lblEmail = React.createRef()
+        const lblWhatsapp = React.createRef()
+        const lblEndereco = React.createRef()
+        const lblNumEndereco = React.createRef()
+        const lblBairro = React.createRef()
+        const lblCEP = React.createRef()
+        const lblCidade = React.createRef()
+        const lblEstado = React.createRef()
+        const lblCPF = React.createRef()
+        const lblRG = React.createRef()
+        const lblNacionalidade = React.createRef()
+        const lblProfissao = React.createRef()
+        const lblEstadoCivil = React.createRef()
+        const lblSenha = React.createRef()
+        
+        
+        const lbl_Nome = React.createRef(
+            <label 
+            id={"lblNome"}
+            ref={lblNome} 
+            />
+        );
+
+        const lbl_Sobrenome = React.createRef(
+            <label 
+            id={"lblSobrenome"}
+            ref={lblSobrenome} 
+            />
+        );
+
+        const lbl_DiaNascimento = React.createRef(
+            <label 
+            id={"lblDiaNascimento"}
+            ref={lblDiaNascimento} 
+            />
+        );
+
+        const lbl_MesNascimento= React.createRef(
+            <label 
+            id={"lblMesNascimento"}
+            ref={lblMesNascimento} 
+            />
+        );
+
+        const lbl_AnoNascimento = React.createRef(
+            <label 
+            id={"lblAnoNascimento"}
+            ref={lblAnoNascimento} 
+            />
+        );
+
+        const lbl_Email = React.createRef(
+            <label 
+            id={"lblEmail"}
+            ref={lblEmail} 
+            />
+        );
+
+        const lbl_Whatsapp = React.createRef(
+            <label 
+            id={"lblWhatsapp"}
+            ref={lblWhatsapp} 
+            />
+        );
+        const lbl_Endereco = React.createRef(
+            <label 
+            id={"lblEndereco"}
+            ref={lblEndereco} 
+            />
+        );
+
+        const lbl_NumEndereco = React.createRef(
+            <label 
+            id={"lblNumEndereco"}
+            ref={lblNumEndereco} 
+            />
+        );
+
+        const lbl_Bairro = React.createRef(
+            <label 
+            id={"lblBairro"}
+            ref={lblBairro} 
+            />
+        );
+
+        const lbl_CEP = React.createRef(
+            <label 
+            id={"lblCEP"}
+            ref={lblCEP} 
+            />
+        );
+
+        const lbl_Cidade = React.createRef(
+            <label 
+            id={"lblCidade"}
+            ref={lblCidade} 
+            />
+        );
+
+        const lbl_Estado = React.createRef(
+            <label 
+            id={"lblEstado"}
+            ref={lblEstado} 
+            />
+        );
+
+        const lbl_CPF = React.createRef(
+            <label 
+            id={"lblCPF"}
+            ref={lblCPF} 
+            />
+        );
+        const lbl_RG = React.createRef(
+            <label 
+            id={"lblRG"}
+            ref={lblRG} 
+            />
+        );
+
+        const lbl_Nacionalidade = React.createRef(
+            <label 
+            id={"lblNacionalidade"}
+            ref={lblNacionalidade} 
+            />
+        );
+
+        const lbl_Profissao = React.createRef(
+            <label 
+            id={"lblProfissao"}
+            ref={lblProfissao} 
+            />
+        );
+
+        const lbl_EstadoCivil = React.createRef(
+            <label 
+            id={"lblEstadoCivil"}
+            ref={lblEstadoCivil} 
+            />
+        );
+        const lbl_Senha = React.createRef(
+            <label 
+            id={"lblSenha"}
+            ref={lblSenha} 
+            />
+        );
+        
+       function formulario(){
+            var formulario = [
+        lbl_Nome,
+        txt_Nome,
+        lbl_Sobrenome,     
+        txt_Sobrenome,   
+        lbl_DiaNascimento,
+        txt_DiaNascimento,
+        lbl_MesNascimento,
+        txt_MesNascimento,
+        lbl_AnoNascimento,
+        txt_AnoNascimento,
+        lbl_Email,
+        txt_Email,
+        lbl_Whatsapp ,
+        txt_Whatsapp ,
+        lbl_Endereco ,
+        txt_Endereco ,
+        lbl_NumEndereco ,
+        txt_NumEndereco ,
+        lbl_Bairro ,
+        txt_Bairro ,
+        lbl_CEP,
+        txt_CEP,
+        lbl_Cidade,
+        txt_Cidade,
+        lbl_Estado,
+        txt_Estado,
+        lbl_CPF,
+        txt_CPF,
+        lbl_RG,
+        txt_RG,
+        lbl_Nacionalidade,
+        txt_Nacionalidade,
+        lbl_Profissao,
+        txt_Profissao,
+        lbl_EstadoCivil,
+        txt_EstadoCivil,
+        lbl_Senha,
+        txt_Senha  
+    ];
+    return (
+
+    )
+       }
+       
+        
+
+        const container = document.getElementById('mydiv');
+        const root = ReactDOM.createRoot(container);
+        root.render(formulario);
+    </script>
+</body>
+</html>
